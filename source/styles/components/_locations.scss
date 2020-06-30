@@ -1,0 +1,37 @@
+.locations {
+	&__filter {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 0 0 5px -20px;
+
+		* {
+			margin-bottom: 15px;
+			margin-left: 20px;
+		}
+
+		*:first-child {
+			margin-right: auto;
+		}
+
+		.custom-control {
+			min-height: auto;
+			padding-left: 0.3rem;
+		}
+	}
+
+	&__item {
+		display: flex;
+		margin: 0 0 25px;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.locations {
+		&__filter {
+			.custom-select {
+				max-width: 250px;
+			}
+		}
+	}
+}
